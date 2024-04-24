@@ -12,8 +12,13 @@ const Principal = () => {
         </View>
       </View>
       <Text style={[styles.inventlab, styles.inventlabTypo]}>
+<<<<<<< HEAD
         <Text style={styles.invent}>Invent</Text>
         <Text style={styles.lab}>Labb</Text>
+=======
+        <Text style={styles.invent}>Inventssss</Text>
+        <Text style={styles.lab}>Lab</Text>
+>>>>>>> 2622b5f6641291d78510be040f886311886882cc
       </Text>
       <Text style={[styles.laboratorioEscolar2024, styles.inventlabTypo]}>
         Laboratorio escolar 2024
