@@ -12,7 +12,7 @@ const Principal = () => {
         </View>
       </View>
       <Text style={[styles.inventlab, styles.inventlabTypo]}>
-        <Text style={styles.invent}>Invent</Text>
+        <Text style={styles.invent}>Inventssss</Text>
         <Text style={styles.lab}>Lab</Text>
       </Text>
       <Text style={[styles.laboratorioEscolar2024, styles.inventlabTypo]}>
