@@ -1,6 +1,6 @@
 import * as React from "react";
 import { StyleSheet, Text, View, Image } from "react-native";
-import { FontFamily, FontSize, Color, Padding, Border } from "./GlobalStyles";
+import { FontFamily, FontSize, Color, Padding, Border } from "../GlobalStyles";
 
 const SolicitudDeEquipos = () => {
   return (
@@ -83,6 +83,20 @@ const SolicitudDeEquipos = () => {
 };
 
 const styles = StyleSheet.create({
+  footer: {
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+    alignItems: 'center',
+    height: 60,
+    backgroundColor: '#fff',
+    borderTopWidth: 1,
+    borderTopColor: '#ccc',
+  },
+  iconContainer: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
   helloArinaTypo: {
     fontFamily: FontFamily.display,
     fontWeight: "700",

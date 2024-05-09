@@ -9,6 +9,7 @@ export const FontFamily = {
   export const FontSize = {
     size_5xl: 24,
     size_29xl: 48,
+    subheader_size: 16,
     subheader2_size: 14,
     subheader3_size: 12,
     display_size: 20,

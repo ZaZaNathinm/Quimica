@@ -1,16 +1,15 @@
 
 import React from 'react';
-import Principal from "./Principal";
-import SolicitudDeEquipos from "./SolicitudDeEquipos";
-import Login from "./Login";
-import Inventario from './Inventario';
+import Navigation from './src/navegation/Navegation';
+import PantallaPrincipal from "./src/screens/Principal"
+import MenuPrincipal from "./src/screens/MenuPrincipal";
 
 
 const App = () => {
 
   return (
    
-    <Principal /> 
+    <PantallaPrincipal/> 
    
   );
 };

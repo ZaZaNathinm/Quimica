@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Text, StyleSheet, View, Image} from "react-native";
-import { Padding, FontFamily, Color, FontSize, Border } from "./GlobalStyles";
+import { Padding, FontFamily, Color, FontSize, Border } from "../GlobalStyles";
 
 const Login = () => {
   return (
