@@ -13,10 +13,10 @@ const MenuPrincipal = ({ navigation }) =>{
             <Image
                 style={styles.solicitudDeEquiposChild}
                 contentFit="cover"
-                source={require("../imgs/aklogo-1.png")}
+                source={require("../imgs/logo2.png")}
         	/>
             <Text style={[styles.helloArina, styles.helloArinaTypo]}>
-                Bienvenida Ary
+                Bienvenido Adrian
             </Text>
         </View>
         
@@ -65,13 +65,13 @@ const MenuPrincipal = ({ navigation }) =>{
 
         <View style={styles.footer}>
             <TouchableOpacity style={styles.iconContainer}>
-                <Icon name="home" size={30} color="#000000" />
+                <Icon name="home" size={30} color="#874356" />
             </TouchableOpacity>
             <TouchableOpacity style={styles.iconContainer}>
-                <Icon name="search" size={30} color="#000" />
+                <Icon name="search" size={30} color="#874356" />
             </TouchableOpacity>
             <TouchableOpacity style={styles.iconContainer}>
-                <Icon name="user" size={30} color="#000" />
+                <Icon name="user" size={30} color="#874356" />
             </TouchableOpacity>
         </View>
     </View>
@@ -160,7 +160,7 @@ const styles = StyleSheet.create({
     },
 
     helloArina: {
-        left: 70,
+        left: 65,
         fontSize: FontSize.display_size,
         lineHeight: 26,
         color: Color.orangePrimary,
@@ -174,8 +174,8 @@ const styles = StyleSheet.create({
     },
     solicitudDeEquiposChild: {
         left: 10,
-        width: 50,
-        height: 50,
+        width: 45,
+        height: 45,
         position: "absolute",
     },
     toolbar: {

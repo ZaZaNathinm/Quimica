@@ -12,13 +12,13 @@ const Prestamos = ({ navigation }) => {
 
         <View style={styles.footer}>
             <TouchableOpacity style={styles.iconContainer}>
-                <Icon name="home" size={30} color="#000000" />
+                <Icon name="home" size={30} color="#874356" />
             </TouchableOpacity>
             <TouchableOpacity style={styles.iconContainer}>
-                <Icon name="search" size={30} color="#000" />
+                <Icon name="search" size={30} color="#874356" />
             </TouchableOpacity>
             <TouchableOpacity style={styles.iconContainer}>
-                <Icon name="user" size={30} color="#000" />
+                <Icon name="user" size={30} color="#874356" />
             </TouchableOpacity>
         </View>
     </View>
