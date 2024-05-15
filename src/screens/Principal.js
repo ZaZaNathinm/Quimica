@@ -2,12 +2,13 @@ import * as React from "react";
 import { Text, StyleSheet, TouchableOpacity, View, Image, Dimensions } from "react-native";
 import { Padding, FontSize, FontFamily, Color, Border } from "../../GlobalStyles";
 
+const Principal = ({ navigation}) => {
 
-const Principal = () => {
 
   const handlePress = () => {
+    // Función para manejar el evento de presionar el botón
     console.log('Botón presionado');
-    
+    navigation.navigate('Login')
   };
 
   return (

@@ -1,22 +1,47 @@
 import * as React from 'react';
-import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 
 import PantallaPrincipal from "../screens/Principal"
+import Login from '../screens/Login';
 import MenuPrincipal from "../screens/MenuPrincipal";
+import Inventario from '../screens/Inventario';
+import Prestamos from '../screens/Prestamos';
+import Calendario from '../screens/Calendario';
 
+export default function Navigation() {
 
-const Stack = createStackNavigator();
+  const Stack = createStackNavigator();
 
-function Navigation() {
   return (
-    <NavigationContainer>
-      <Stack.Navigator initialRouteName="Principal">
-        <Stack.Screen name="Principal" component={PantallaPrincipal} />
-        <Stack.Screen name="Menu" component={MenuPrincipal} />
-      </Stack.Navigator>
-    </NavigationContainer>
+    <Stack.Navigator initialRouteName="Principal">
+      <Stack.Screen 
+        name="Principal" 
+        component={PantallaPrincipal} 
+        options={{headerShown: false}}
+      />
+      <Stack.Screen 
+        name="Login" 
+        component={Login} 
+        options={{headerShown: false}}
+      />
+      <Stack.Screen 
+        name="Menu" 
+        component={MenuPrincipal} 
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="Inventario"
+        component={Inventario}
+      />
+      <Stack.Screen
+        name="Prestamos"
+        component={Prestamos}
+      />
+      <Stack.Screen
+        name="Calendario"
+        component={Calendario}
+      />
+    </Stack.Navigator>
+
   );
 }
-
-export default Navigation;

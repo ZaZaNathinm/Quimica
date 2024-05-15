@@ -1,15 +1,16 @@
 
 import React from 'react';
-import Navigation from './src/navegation/Navegation';
-import PantallaPrincipal from "./src/screens/Principal"
-import MenuPrincipal from "./src/screens/MenuPrincipal";
 
+import { NavigationContainer } from '@react-navigation/native';
+import Navigation from './src/navegation/Navegation';
 
 const App = () => {
 
   return (
    
-    <PantallaPrincipal/> 
+    <NavigationContainer>
+      <Navigation/>
+    </NavigationContainer>
    
   );
 };

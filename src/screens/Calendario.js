@@ -1,67 +1,14 @@
 import * as React from "react";
-import { StyleSheet,TouchableOpacity, Text, View, Image} from "react-native";
+import { StyleSheet,TouchableOpacity, Text, View, Image } from "react-native";
 import { FontFamily, FontSize, Color, Padding, Border } from "../../GlobalStyles";
+
 import Icon from 'react-native-vector-icons/FontAwesome';
 
-
-const MenuPrincipal = ({ navigation }) =>{
-
+const Calendario = ({ navigation }) => {
 
   return (
     <View style={styles.solicitudDeEquipos}>
-        <View style={styles.toolbar}>
-            <Image
-                style={styles.solicitudDeEquiposChild}
-                contentFit="cover"
-                source={require("../imgs/aklogo-1.png")}
-        	/>
-            <Text style={[styles.helloArina, styles.helloArinaTypo]}>
-                Bienvenida Ary
-            </Text>
-        </View>
         
-        <TouchableOpacity style={styles.container1} onPress={() => navigation.navigate('Inventario')}>
-            <Image
-                style={[styles.Icon1, styles.groupLayout]}
-                contentFit="cover"
-                source={require("../imgs/material.png")}
-            />
-            <View style={styles.rectangleWrapper}>
-                <View style={styles.groupShadowBox} />
-            </View>
-            <Text style={[styles.inventario, styles.helloArinaTypo]}>
-                Inventario
-            </Text>
-        </TouchableOpacity>
-
-        <TouchableOpacity style={styles.container2} onPress={() => navigation.navigate('Prestamos')}>
-            <Image
-                style={[styles.Icon1, styles.groupLayout]}
-                contentFit="cover"
-                source={require("../imgs/prestamo.png")}
-            />
-            <View style={styles.rectangleWrapper}>                    
-                <View style={styles.groupShadowBox} />
-            </View>
-            <Text style={[styles.inventario, styles.helloArinaTypo]}>
-                Prestamos
-            </Text>
-        </TouchableOpacity>
-
-        <TouchableOpacity style={styles.container3} onPress={() => navigation.navigate('Calendario')}>
-            <Image
-                style={[styles.Icon1, styles.groupLayout]}
-                contentFit="cover"
-                source={require("../imgs/calendario.png")}
-            />
-            <View style={styles.rectangleWrapper}>
-                <View style={styles.groupShadowBox} />
-            </View>
-            <Text style={[styles.inventario, styles.helloArinaTypo]}>
-                Calendario
-            </Text>
-        </TouchableOpacity>
-    
 
         <View style={styles.footer}>
             <TouchableOpacity style={styles.iconContainer}>
@@ -201,4 +148,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default MenuPrincipal;
+export default Calendario;
