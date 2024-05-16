@@ -1,15 +1,55 @@
 import * as React from "react";
 import { StyleSheet,TouchableOpacity, Text, View, Image } from "react-native";
 import { FontFamily, FontSize, Color, Padding, Border } from "../../GlobalStyles";
-
 import Icon from 'react-native-vector-icons/FontAwesome';
 
 const Inventario = ({ navigation }) => {
 
   return (
     <View style={styles.solicitudDeEquipos}>
-        
 
+<TouchableOpacity style={styles.container1} onPress={() => navigation.navigate('Materiales')}>
+            <Image
+                style={[styles.Icon1, styles.groupLayout]}
+                contentFit="cover"
+                source={require("../imgs/material2.jpg")}
+            />
+            <View style={styles.rectangleWrapper}>
+                <View style={styles.groupShadowBox} />
+            </View>
+            <Text style={[styles.inventario, styles.helloArinaTypo]}>
+                Material Disponible
+            </Text>
+        </TouchableOpacity>
+
+        <TouchableOpacity style={styles.container2} onPress={() => navigation.navigate('Equipos')}>
+            <Image
+                style={[styles.Icon1, styles.groupLayout]}
+                contentFit="cover"
+                source={require("../imgs/equipos.jpg")}
+            />
+            <View style={styles.rectangleWrapper}>                    
+                <View style={styles.groupShadowBox} />
+            </View>
+            <Text style={[styles.inventario, styles.helloArinaTypo]}>
+                Equipos
+            </Text>
+        </TouchableOpacity>
+
+        <TouchableOpacity style={styles.container3} onPress={() => navigation.navigate('Productos')}>
+            <Image
+                style={[styles.Icon1, styles.groupLayout]}
+                contentFit="cover"
+                source={require("../imgs/productos.png")}
+            />
+            <View style={styles.rectangleWrapper}>
+                <View style={styles.groupShadowBox} />
+            </View>
+            <Text style={[styles.inventario, styles.helloArinaTypo]}>
+                Productos Químicos
+            </Text>
+        </TouchableOpacity>
+        
         <View style={styles.footer}>
             <TouchableOpacity style={styles.iconContainer}>
                 <Icon name="home" size={30} color="#874356" />
@@ -22,6 +62,11 @@ const Inventario = ({ navigation }) => {
             </TouchableOpacity>
         </View>
     </View>
+
+    
+
+     
+    
   );
 };
 

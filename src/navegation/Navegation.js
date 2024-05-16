@@ -7,6 +7,13 @@ import MenuPrincipal from "../screens/MenuPrincipal";
 import Inventario from '../screens/Inventario';
 import Prestamos from '../screens/Prestamos';
 import Calendario from '../screens/Calendario';
+import Productos from '../Inventario/Productos';
+import Equipos from '../Inventario/Equipos';
+import Materiales from '../Inventario/Materiales';
+import Detalles from '../Inventario/Detalles';
+import SolicitarPrestamo from '../Prestamos/SolicitarPrestamo';
+import Articulo from '../Prestamos/Articulo';
+import Devolucion from '../Prestamos/Devolucion';
 
 export default function Navigation() {
 
@@ -36,10 +43,41 @@ export default function Navigation() {
       <Stack.Screen
         name="Prestamos"
         component={Prestamos}
+        options={{ title: 'Préstamos'}}
       />
       <Stack.Screen
         name="Calendario"
         component={Calendario}
+      />
+        <Stack.Screen
+        name="Productos"
+        component={Productos}
+      />
+     <Stack.Screen
+        name="Equipos"
+        component={Equipos}
+      />
+     <Stack.Screen
+        name="Materiales"
+        component={Materiales}
+      />
+     <Stack.Screen
+        name="Detalles"
+        component={Detalles}
+      />
+       <Stack.Screen
+        name="SolicitarPrestamo"
+        component={SolicitarPrestamo}
+        options={{ title: 'Solicitar Equipo'}}
+      />
+       <Stack.Screen
+        name="Articulo"
+        component={Articulo}
+      />
+       <Stack.Screen
+        name="Devolucion"
+        component={Devolucion}
+        options={{ title: 'Devolución'}}
       />
     </Stack.Navigator>
 

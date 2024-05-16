@@ -44,7 +44,7 @@ const MenuPrincipal = ({ navigation }) =>{
                 <View style={styles.groupShadowBox} />
             </View>
             <Text style={[styles.inventario, styles.helloArinaTypo]}>
-                Prestamos
+                Préstamos
             </Text>
         </TouchableOpacity>
 
