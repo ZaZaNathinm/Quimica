@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { StyleSheet, View, TouchableOpacity, Text, Image, ScrollView, TextInput } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
+import { footer } from '../../GlobalStyles';
 
 const productosData = [
   { nombre: 'Alka-Selser Tabletas 4pz', imagen: require('../imgs/alkaseltzer.jpg') },
@@ -46,10 +47,13 @@ const Productos = ({ navigation }) => {
             </TouchableOpacity>
           ))
         ) : (
-          <Text style={styles.noResultsText}>No se encuentra el producto</Text>
+          <View style={styles.noResultsContainer}>
+            <Text style={styles.noResultsText}>No se encuentra el producto</Text>
+            <Image source={require('../imgs/error2.png')} style={styles.noResultsImage} />
+          </View> 
         )}
       </ScrollView>
-      <View style={styles.footer}>
+      <View style={footer}>
         <TouchableOpacity style={styles.iconContainer}>
           <Icon name="home" size={30} color="#874356" />
         </TouchableOpacity>
@@ -65,6 +69,15 @@ const Productos = ({ navigation }) => {
 };
 
 const styles = StyleSheet.create({
+  noResultsContainer: {
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  noResultsImage: {
+    width: 322,
+    height: 180,
+    marginTop: 20,
+  },
   container: {
     flex: 1,
     backgroundColor: '#fff',
@@ -112,17 +125,8 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     fontSize: 20,
     color: '#888',
-    paddingLeft: 65,
-  },
-  footer: {
-    flexDirection: 'row',
-    justifyContent: 'space-around',
+    justifyContent: 'center',
     alignItems: 'center',
-    height: 60,
-    borderTopWidth: 1,
-    borderColor: '#eee',
-    shadowRadius: 20,
-    shadowColor: 'rgba(0, 0, 0, 0.13)',
   },
   iconContainer: {
     flex: 1,

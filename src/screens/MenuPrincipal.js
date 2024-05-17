@@ -1,6 +1,6 @@
 import * as React from "react";
 import { StyleSheet,TouchableOpacity, Text, View, Image} from "react-native";
-import { FontFamily, FontSize, Color, Padding, Border } from "../../GlobalStyles";
+import { FontFamily, FontSize, Color, Padding, Border, footer } from "../../GlobalStyles";
 import Icon from 'react-native-vector-icons/FontAwesome';
 
 
@@ -18,6 +18,13 @@ const MenuPrincipal = ({ navigation }) =>{
             <Text style={[styles.helloArina, styles.helloArinaTypo]}>
                 Bienvenido Adrian
             </Text>
+
+            <TouchableOpacity style={styles.iconContainer2}>
+                <Icon name="file-o" size={30} color="#874356" />
+                <Text style ={styles.prestamosLetra}>
+                    0
+                </Text>
+            </TouchableOpacity>
         </View>
         
         <TouchableOpacity style={styles.container1} onPress={() => navigation.navigate('Inventario')}>
@@ -63,12 +70,12 @@ const MenuPrincipal = ({ navigation }) =>{
         </TouchableOpacity>
     
 
-        <View style={styles.footer}>
+        <View style = {footer}>
             <TouchableOpacity style={styles.iconContainer}>
-                <Icon name="home" size={30} color="#874356" />
+                <Icon name="calendar" size={30} color="#874356" />
             </TouchableOpacity>
             <TouchableOpacity style={styles.iconContainer}>
-                <Icon name="search" size={30} color="#874356" />
+                <Icon name="home" size={30} color="#874356" />
             </TouchableOpacity>
             <TouchableOpacity style={styles.iconContainer}>
                 <Icon name="user" size={30} color="#874356" />
@@ -79,23 +86,17 @@ const MenuPrincipal = ({ navigation }) =>{
 };
 
 const styles = StyleSheet.create({
-    footer: {
-        flexDirection: 'row',
-        justifyContent: 'space-around',
-        alignItems: 'center',
-        height: 60,
-        width: '100%',
-        backgroundColor: Color.white,
-        shadowRadius: 20,
-        borderTopRightRadius: Border.br_3xs,
-        borderTopLeftRadius: Border.br_3xs,
-        shadowColor: "rgba(0, 0, 0, 0.13)",
-      },
-
     iconContainer: {
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
+      },
+      iconContainer2: {
+        flex: 1,
+        flexDirection: 'row',
+        justifyContent: 'flex-end',
+        alignItems: 'center',
+        marginRight: 26,
       },
     inventario: {
         top: 188,
@@ -103,6 +104,16 @@ const styles = StyleSheet.create({
         lineHeight: 18,
         color: Color.colorBlack,
         textAlign:"justify",
+        marginRight: 16,
+      },
+      prestamosLetra: {
+        position: 'absolute',
+        //top: '50%',  // Ajusta según sea necesario para centrar verticalmente
+        //left: '50%', // Ajusta según sea necesario para centrar horizontalmente
+        transform: [{ translateX: -4 }, { translateY: 2 }], // Centra el texto exactamente en el centro del icono
+        color: '#874356', // Ajusta el color del texto según sea necesario
+        fontSize: 16, // Ajusta el tamaño del texto según sea necesario
+
       },
     groupShadowBox: {
         elevation: 4,
@@ -183,7 +194,9 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'space-between',
         height: 50,
-        backgroundColor: 'white',
+        backgroundColor: "#D9D9D9",
+        borderBottomRightRadius: Border.br_3xs,
+        borderBottomLeftRadius : Border.br_3xs,
     },
     toolbarTitle: {
         color: '#fff',

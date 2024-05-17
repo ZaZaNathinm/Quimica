@@ -41,3 +41,15 @@ export const FontFamily = {
     br_xs: 12,
   };
   
+  export const footer = {
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+    alignItems: 'center',
+    height: 60,
+    width: '100%',
+    backgroundColor: "#D9D9D9",
+    shadowRadius: 20,
+    borderTopRightRadius: Border.br_3xs,
+    borderTopLeftRadius: Border.br_3xs,
+    shadowColor: "rgba(0, 0, 0, 0.13)",
+  };

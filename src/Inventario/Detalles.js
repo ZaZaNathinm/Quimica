@@ -1,6 +1,6 @@
 import * as React from "react";
 import { StyleSheet, TouchableOpacity, Text, View, Image, ScrollView } from "react-native";
-import { FontFamily, FontSize, Color, Padding, Border } from "../../GlobalStyles";
+import { FontFamily, FontSize, Color, Padding, Border, footer } from "../../GlobalStyles";
 import Icon from 'react-native-vector-icons/FontAwesome';
 
 const Detalles = ({ route, navigation }) => {
@@ -39,7 +39,7 @@ const Detalles = ({ route, navigation }) => {
 
       </ScrollView>
 
-      <View style={styles.footer}>
+      <View style={footer}>
         <TouchableOpacity style={styles.iconContainer} onPress={() => navigation.navigate('Productos')}>
           <Icon name="home" size={30} color="#874356" />
         </TouchableOpacity>
@@ -95,17 +95,6 @@ const styles = StyleSheet.create({
   specificationText: {
     fontSize: FontSize.small,
     color: '#000',
-  },
-  footer: {
-    flexDirection: 'row',
-    justifyContent: 'space-around',
-    alignItems: 'center',
-    height: 60,
-    backgroundColor: Color.white,
-    shadowRadius: 20,
-    borderTopRightRadius: Border.br_3xs,
-    borderTopLeftRadius: Border.br_3xs,
-    shadowColor: "rgba(0, 0, 0, 0.13)",
   },
   iconContainer: {
     flex: 1,
