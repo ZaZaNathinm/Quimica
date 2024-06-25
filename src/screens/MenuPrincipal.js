@@ -27,17 +27,17 @@ const MenuPrincipal = ({ navigation }) =>{
             </TouchableOpacity>
         </View>
         
-        <TouchableOpacity style={styles.container1} onPress={() => navigation.navigate('Inventario')}>
+        <TouchableOpacity style={styles.container1} onPress={() => navigation.navigate('Material')}>
             <Image
                 style={[styles.Icon1, styles.groupLayout]}
                 contentFit="cover"
-                source={require("../imgs/material.png")}
+                source={require("../imgs/material_portada.png")}
             />
             <View style={styles.rectangleWrapper}>
                 <View style={styles.groupShadowBox} />
             </View>
             <Text style={[styles.inventario, styles.helloArinaTypo]}>
-                Inventario
+                Material
             </Text>
         </TouchableOpacity>
 
@@ -45,7 +45,7 @@ const MenuPrincipal = ({ navigation }) =>{
             <Image
                 style={[styles.Icon1, styles.groupLayout]}
                 contentFit="cover"
-                source={require("../imgs/prestamo.png")}
+                source={require("../imgs/prestamos_portada.png")}
             />
             <View style={styles.rectangleWrapper}>                    
                 <View style={styles.groupShadowBox} />
@@ -71,9 +71,6 @@ const MenuPrincipal = ({ navigation }) =>{
     
 
         <View style = {footer}>
-            <TouchableOpacity style={styles.iconContainer}>
-                <Icon name="calendar" size={30} color="#874356" />
-            </TouchableOpacity>
             <TouchableOpacity style={styles.iconContainer}>
                 <Icon name="home" size={30} color="#874356" />
             </TouchableOpacity>

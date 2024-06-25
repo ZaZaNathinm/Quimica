@@ -4,12 +4,11 @@ import { createStackNavigator } from '@react-navigation/stack';
 import PantallaPrincipal from "../screens/Principal"
 import Login from '../screens/Login';
 import MenuPrincipal from "../screens/MenuPrincipal";
-import Inventario from '../screens/Inventario';
+import Material from '../screens/Material';
 import Prestamos from '../screens/Prestamos';
 import Calendario from '../screens/Calendario';
 import Productos from '../Inventario/Productos';
 import Equipos from '../Inventario/Equipos';
-import Materiales from '../Inventario/Materiales';
 import Detalles from '../Inventario/Detalles';
 import SolicitarPrestamo from '../Prestamos/SolicitarPrestamo';
 import Articulo from '../Prestamos/Articulo';
@@ -37,8 +36,8 @@ export default function Navigation() {
         options={{headerShown: false}}
       />
       <Stack.Screen
-        name="Inventario"
-        component={Inventario}
+        name="Material"
+        component={Material}
       />
       <Stack.Screen
         name="Prestamos"
@@ -56,10 +55,6 @@ export default function Navigation() {
      <Stack.Screen
         name="Equipos"
         component={Equipos}
-      />
-     <Stack.Screen
-        name="Materiales"
-        component={Materiales}
       />
      <Stack.Screen
         name="Detalles"
